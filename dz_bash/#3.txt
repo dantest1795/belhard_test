@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sum_func(){
+echo $(( $1+$2 ))
+}
+
+if [ $# -eq 2 ]
+then
+sum=$(sum_func $1 $2)
+echo $sum
+else
+echo "you must enter two numbers"
+fi

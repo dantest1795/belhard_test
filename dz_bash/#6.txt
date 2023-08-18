@@ -1,0 +1,17 @@
+#!/bin/bash
+
+script() {
+echo $1
+}
+
+val=$(script $1)
+
+if [ $# -eq " " ]
+then
+echo "I am want the pizza"
+elif [ $val = "pizza" ]
+then
+echo "$val with pineapple?"
+else
+echo "I am want the pizza!"
+fi
